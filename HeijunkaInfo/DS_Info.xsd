@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DS_Info" targetNamespace="http://tempuri.org/DS_Info.xsd" xmlns:mstns="http://tempuri.org/DS_Info.xsd" xmlns="http://tempuri.org/DS_Info.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DS_Info" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DS_Info" msprop:Generator_UserDSName="DS_Info">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="HeijunkaInfo" msprop:Generator_TableClassName="HeijunkaInfoDataTable" msprop:Generator_TableVarName="tableHeijunkaInfo" msprop:Generator_TablePropName="HeijunkaInfo" msprop:Generator_RowDeletingName="HeijunkaInfoRowDeleting" msprop:Generator_RowChangingName="HeijunkaInfoRowChanging" msprop:Generator_RowEvHandlerName="HeijunkaInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="HeijunkaInfoRowDeleted" msprop:Generator_UserTableName="HeijunkaInfo" msprop:Generator_RowChangedName="HeijunkaInfoRowChanged" msprop:Generator_RowEvArgName="HeijunkaInfoRowChangeEvent" msprop:Generator_RowClassName="HeijunkaInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Computername" msprop:Generator_ColumnVarNameInTable="columnComputername" msprop:Generator_ColumnPropNameInRow="Computername" msprop:Generator_ColumnPropNameInTable="ComputernameColumn" msprop:Generator_UserColumnName="Computername" type="xs:string" />
+              <xs:element name="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" type="xs:string" minOccurs="0" />
+              <xs:element name="SW-Version" msprop:Generator_ColumnVarNameInTable="_columnSW_Version" msprop:Generator_ColumnPropNameInRow="_SW_Version" msprop:Generator_ColumnPropNameInTable="_SW_VersionColumn" msprop:Generator_UserColumnName="SW-Version" type="xs:string" minOccurs="0" />
+              <xs:element name="SAP-Version" msprop:Generator_ColumnVarNameInTable="_columnSAP_Version" msprop:Generator_ColumnPropNameInRow="_SAP_Version" msprop:Generator_ColumnPropNameInTable="_SAP_VersionColumn" msprop:Generator_UserColumnName="SAP-Version" type="xs:string" minOccurs="0" />
+              <xs:element name="Username" msprop:Generator_ColumnVarNameInTable="columnUsername" msprop:Generator_ColumnPropNameInRow="Username" msprop:Generator_ColumnPropNameInTable="UsernameColumn" msprop:Generator_UserColumnName="Username" type="xs:string" minOccurs="0" />
+              <xs:element name="LastSeen" msprop:Generator_ColumnVarNameInTable="columnLastSeen" msprop:Generator_ColumnPropNameInRow="LastSeen" msprop:Generator_ColumnPropNameInTable="LastSeenColumn" msprop:Generator_UserColumnName="LastSeen" type="xs:string" minOccurs="0" />
+              <xs:element name="Status1" msprop:Generator_ColumnVarNameInTable="columnStatus1" msprop:Generator_ColumnPropNameInRow="Status1" msprop:Generator_ColumnPropNameInTable="Status1Column" msprop:Generator_UserColumnName="Status1" type="xs:string" minOccurs="0" />
+              <xs:element name="Linie" msprop:Generator_ColumnVarNameInTable="columnLinie" msprop:Generator_ColumnPropNameInRow="Linie" msprop:Generator_ColumnPropNameInTable="LinieColumn" msprop:Generator_UserColumnName="Linie" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="HeijunkaInfoKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:HeijunkaInfo" />
+      <xs:field xpath="mstns:Computername" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

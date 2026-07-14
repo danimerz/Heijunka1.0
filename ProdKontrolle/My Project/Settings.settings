@@ -1,0 +1,321 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ExportPfadRemote" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\SAP_DATA\export.txt</Value>
+    </Setting>
+    <Setting Name="ExportPfadLocal" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\TEMP\export.txt</Value>
+    </Setting>
+    <Setting Name="Linie" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UpdateInterval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">600000</Value>
+    </Setting>
+    <Setting Name="autoUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="G_LinieWats" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Checkliste" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ChecklistePfad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\F-Dok\CL-Checklisten\</Value>
+    </Setting>
+    <Setting Name="Fehlerzettel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Systemstatus" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FREI</Value>
+    </Setting>
+    <Setting Name="WATSAPIKEY" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Basic REDACTED_API_KEY</Value>
+    </Setting>
+    <Setting Name="LagerOrt_Ausnahmen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\LabelPrint\08_DruckTools\MagazinBeschriftung_SMD\KonfigFiles\LagerOrt_Ausnahmen.ini</Value>
+    </Setting>
+    <Setting Name="ChangeLogFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\Changelog\Changelog.txt</Value>
+    </Setting>
+    <Setting Name="DGV_Höhe" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">35</Value>
+    </Setting>
+    <Setting Name="ASN_Anzeigen" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="vcheckkontrollePfad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\Ausnahmelisten\v-checkKontrolle\vcheckkont.txt</Value>
+    </Setting>
+    <Setting Name="ausnahmelistePfad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\Ausnahmelisten\WATS\WATS.txt</Value>
+    </Setting>
+    <Setting Name="showDMC" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FAUF_Start" Type="System.String" Scope="User">
+      <Value Profile="(Default)">nur FAUF</Value>
+    </Setting>
+    <Setting Name="SortHeijunka" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ArbPlatz</Value>
+    </Setting>
+    <Setting Name="showLine" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PfadAutoStartIni" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\CommonData\Counters\DigitalHeijunkaLinieInit.ini</Value>
+    </Setting>
+    <Setting Name="showVrgTxt" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="showLPNr" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PfadStationIni" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\CommonData\Counters\DigitalHeijunka\log.ini</Value>
+    </Setting>
+    <Setting Name="Printer_Anlage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Druckplatz</Value>
+    </Setting>
+    <Setting Name="Printer_Station" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Printer_AnzEtiketten" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Printer_LabelArt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Beschriftung</Value>
+    </Setting>
+    <Setting Name="vcheck_scanner" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Kommentar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PfadLagerortAusnhamen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\Ausnahmelisten\Lagerort\Lagerorte.txt</Value>
+    </Setting>
+    <Setting Name="PfadTCAblage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\CommonData\myTC_Download_DevDoc_R11\</Value>
+    </Setting>
+    <Setting Name="PfadFAUFxml" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\CommonData\SAP_Download\0020\PC1\FAUF\</Value>
+    </Setting>
+    <Setting Name="PfadFAUFxmlAlternativ" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\CommonData\SAP_Download\0020\PC1\FAUF\old_FAUF\</Value>
+    </Setting>
+    <Setting Name="G_vCheckVorhanden" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="letzerSAPimport" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Printer_Referenz" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Printer_Aktivieren" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Priter_Z1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Priter_Z2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Priter_Z3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Priter_Z4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Priter_Z5" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Priter_Z6" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Pfad_StndW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\F-Dok\STW-StandardWork\</Value>
+    </Setting>
+    <Setting Name="Pfad_V4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\F-Dok\V4-Arbeitsanweisungen\</Value>
+    </Setting>
+    <Setting Name="Pfad_PA" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\F-Dok\PA-Prüfanweisungen\</Value>
+    </Setting>
+    <Setting Name="sollistHalbfabrikate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LoAnzeigen" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PfadFaufInfo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\Ausnahmelisten\FaufStartMeldung\FaufStartMeldung.txt</Value>
+    </Setting>
+    <Setting Name="FaufEndDatum" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="OPM_OEEConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=ch021094.ad001.siemens.net;Initial Catalog=OPM_OEE;User ID=OPM_OEE_User;Password=REDACTED_PASSWORD&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=ch021094.ad001.siemens.net;Initial Catalog=OPM_OEE;User ID=OPM_OEE_User;Password=REDACTED_PASSWORD</Value>
+    </Setting>
+    <Setting Name="SSN_ASN_MatchTableConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Temp\SSN-ASN_MatchTable.mdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Temp\SSN-ASN_MatchTable.mdb</Value>
+    </Setting>
+    <Setting Name="HeijunkaConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=ch021095.ad001.siemens.net;Initial Catalog=Heijunka;Persist Security Info=True;User ID=Heijunka;Password=REDACTED_PASSWORD&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=ch021095.ad001.siemens.net;Initial Catalog=Heijunka;Persist Security Info=True;User ID=Heijunka;Password=REDACTED_PASSWORD</Value>
+    </Setting>
+    <Setting Name="FaufNichtAnzeigen" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WatsReportXmlPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://fz.sbt.siemens.com/wats/api/Report/Wsxf/</Value>
+    </Setting>
+    <Setting Name="WatsUutReportPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://fz.sbt.siemens.com/wats/api/app/UutReport</Value>
+    </Setting>
+    <Setting Name="WatsHighVolumePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://fz.sbt.siemens.com/wats/api/app/HighVolume</Value>
+    </Setting>
+    <Setting Name="WatsVersionPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://fz.sbt.siemens.com/wats/api/app/Version</Value>
+    </Setting>
+    <Setting Name="OPM_OEEConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=Ch021094;Initial Catalog=OPM_OEE;User ID=OPM_OEE_User;Password=REDACTED_PASSWORD;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=Ch021094;Initial Catalog=OPM_OEE;User ID=OPM_OEE_User;Password=REDACTED_PASSWORD;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False</Value>
+    </Setting>
+    <Setting Name="ExportPfadRemoteDownload" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\SAP_DATA\PC1_Heijunka_FAUF_Data.csv</Value>
+    </Setting>
+    <Setting Name="PrinterDBConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Provider=SQLOLEDB; Server=Ch021094\SQL01; Network Library=DBMSSOCN; Database=DruckerDB; Uid=DruckerDB_User; Pwd=REDACTED_PASSWORD</Value>
+    </Setting>
+    <Setting Name="MQTT_Server_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">139.16.65.183</Value>
+    </Setting>
+    <Setting Name="PrinterBC_Z1" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PrinterBC_Z2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PrinterBC_Z3" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PrinterBC_Z4" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PrinterBC_Z5" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PrinterBC_Z6" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SupportEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">technicalservices-fz.ch@siemens.com</Value>
+    </Setting>
+    <Setting Name="SupportAktivieren" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="emailUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">REDACTED_USERNAME</Value>
+    </Setting>
+    <Setting Name="emailPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">REDACTED_PASSWORD</Value>
+    </Setting>
+    <Setting Name="VorgabezeitAnzeigen" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LernVideoPfad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\F-Dok\LV-Lernvideo\</Value>
+    </Setting>
+    <Setting Name="HeijunkaConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=ch021095;Initial Catalog=Heijunka;User ID=heijunka;Password=REDACTED_PASSWORD;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=ch021095;Initial Catalog=Heijunka;User ID=heijunka;Password=REDACTED_PASSWORD;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False</Value>
+    </Setting>
+    <Setting Name="Logging" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AsmSapListe" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\Ausnahmelisten\ASM\SAP-ASM.csv</Value>
+    </Setting>
+    <Setting Name="incidentMqtt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">iotservervm1.sbt.siemens.com</Value>
+    </Setting>
+    <Setting Name="ihToolApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">REDACTED_API_TOKEN</Value>
+    </Setting>
+    <Setting Name="MultiFmProdKont" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PfadWerkskalender" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ch021093\data\Standards\Tools\Produktionskontrolle\Ausnahmelisten\Werkskalender\Werkskalender.txt</Value>
+    </Setting>
+    <Setting Name="FormWith" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1274</Value>
+    </Setting>
+    <Setting Name="FormHight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">820</Value>
+    </Setting>
+    <Setting Name="MatchTablesConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=CH021094;Initial Catalog=MatchTables;User ID=MatchTables_User;Password=REDACTED_PASSWORD&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=CH021094;Initial Catalog=MatchTables;User ID=MatchTables_User;Password=REDACTED_PASSWORD</Value>
+    </Setting>
+    <Setting Name="MatchTablesConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=CH021094;Initial Catalog=MatchTables;User ID=vCheck_ODBC;Password=REDACTED_PASSWORD;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=CH021094;Initial Catalog=MatchTables;User ID=vCheck_ODBC;Password=REDACTED_PASSWORD;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False</Value>
+    </Setting>
+    <Setting Name="SMTConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Temp\Stammdaten.accdb&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Temp\Stammdaten.accdb</Value>
+    </Setting>
+    <Setting Name="SMTConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=CH021094;Initial Catalog=MatchTables;Persist Security Info=True;User ID=MatchTables_User;Password=REDACTED_PASSWORD&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=CH021094;Initial Catalog=MatchTables;Persist Security Info=True;User ID=MatchTables_User;Password=REDACTED_PASSWORD</Value>
+    </Setting>
+    <Setting Name="SoftwareVersion" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2.5.0.0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

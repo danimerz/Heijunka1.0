@@ -1,0 +1,739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A62AB59B-6BC7-4E2F-882F-5094F5649DE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ProdKontrolle.My.MyApplication</StartupObject>
+    <RootNamespace>ProdKontrolle</RootNamespace>
+    <AssemblyName>ProdKontrolle</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\ch021093\data\Standards\Tools\Produktionskontrolle\Install\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\ch021093\data\Standards\Tools\Produktionskontrolle\Install\</InstallUrl>
+    <ProductName>Digitales Heijunka</ProductName>
+    <PublisherName>Heijunka Tools</PublisherName>
+    <SuiteName>Heijunka Tools</SuiteName>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>2.4.5.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ProdKontrolle.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ProdKontrolle.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4185340D15C86A474BF67BBD5ADA730AA20B8EE7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DigitalesHeijunka_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Sonstiges\favicon %285%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="DataMatrix.net">
+      <HintPath>..\..\..\..\Downloads\DataMatrixNet-bintools-0.4.4\DataMatrix.net.dll</HintPath>
+    </Reference>
+    <Reference Include="FaufAplaXml, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\FaufAplaXml\FaufAplaXml\bin\Debug\net6.0\FaufAplaXml.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Downloads\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="M2Mqtt.Net, Version=4.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\M2Mqtt.4.3.0.0\lib\net45\M2Mqtt.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="MQTTnet, Version=3.1.1.0, Culture=neutral, PublicKeyToken=b69712f52770c0a7, processorArchitecture=MSIL">
+      <HintPath>..\packages\MQTTnet.3.1.1\lib\net461\MQTTnet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PrinterDB, Version=1.18.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Downloads\PrinterDB_V1_19\PrinterDB.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.6\lib\net47\zxing.presentation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Dataset\DS_Ausschuss.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Ausschuss.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DS_Incident.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_Incident.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DS_Incident.vb">
+      <DependentUpon>DS_Incident.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DS_PET_Mitarbeiter.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PET_Mitarbeiter.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DS_PET_Mitarbeiter.vb">
+      <DependentUpon>DS_PET_Mitarbeiter.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DS_vCheck.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_vCheck.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_AenderungDetail.Designer.vb">
+      <DependentUpon>frm_AenderungDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_AenderungDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ausschuss.Designer.vb">
+      <DependentUpon>frm_ausschuss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ausschuss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Dok.Designer.vb">
+      <DependentUpon>frm_Dok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Dok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_FaufSearch.Designer.vb">
+      <DependentUpon>frm_FaufSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_FaufSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Info.Designer.vb">
+      <DependentUpon>frm_Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_inputBox.Designer.vb">
+      <DependentUpon>frm_inputBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_inputBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Passwort.Designer.vb">
+      <DependentUpon>frm_Passwort.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Passwort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_pcbAbruf.Designer.vb">
+      <DependentUpon>frm_pcbAbruf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_pcbAbruf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_print.Designer.vb">
+      <DependentUpon>frm_print.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_print.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ProdKontrolle_Detail.Designer.vb">
+      <DependentUpon>frm_ProdKontrolle_Detail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ProdKontrolle_Detail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_scanPcb.Designer.vb">
+      <DependentUpon>frm_scanPcb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_scanPcb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_supportAnfrage.Designer.vb">
+      <DependentUpon>frm_supportAnfrage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_supportAnfrage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\DS_OPM_OEE.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_OPM_OEE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DS_OPM_OEE.vb">
+      <DependentUpon>DS_OPM_OEE.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\ProgrammübersichtDataSet.vb">
+      <DependentUpon>ProgrammübersichtDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Changelog.Designer.vb">
+      <DependentUpon>Changelog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Changelog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FehlerWATS.Designer.vb">
+      <DependentUpon>FehlerWATS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FehlerWATS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OEEDetails.Designer.vb">
+      <DependentUpon>OEEDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OEEDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\v-checkKontrolle.Designer.vb">
+      <DependentUpon>v-checkKontrolle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\v-checkKontrolle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klassen\Code128Content.vb" />
+    <Compile Include="Klassen\Code128Rendering.vb" />
+    <Compile Include="Dataset\DS_ProdKontrolle.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_ProdKontrolle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\DS_ProdKontrolle.vb">
+      <DependentUpon>DS_ProdKontrolle.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Einstellungen.Designer.vb">
+      <DependentUpon>Einstellungen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Einstellungen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Frm_Barcodevb.Designer.vb">
+      <DependentUpon>Frm_Barcodevb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Frm_Barcodevb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_ProdKontrolle.Designer.vb">
+      <DependentUpon>frm_ProdKontrolle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_ProdKontrolle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Ruckmelden.Designer.vb">
+      <DependentUpon>frm_Ruckmelden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Ruckmelden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Ruckstand.Designer.vb">
+      <DependentUpon>frm_Ruckstand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Ruckstand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_Stueckliste.Designer.vb">
+      <DependentUpon>frm_Stueckliste.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_Stueckliste.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LinieAuswaehlen.Designer.vb">
+      <DependentUpon>LinieAuswaehlen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LinieAuswaehlen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dataset\MatchTablesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MatchTablesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Klassen\Feiertage.vb" />
+    <Compile Include="Klassen\GlobaleFunktionen.vb" />
+    <Compile Include="Klassen\HeijunkaAnzeige.vb" />
+    <Compile Include="Klassen\mqtt_payload\attachments.vb" />
+    <Compile Include="Klassen\mqtt_payload\fields.vb" />
+    <Compile Include="Klassen\mqtt_payload\Incident.vb" />
+    <Compile Include="Klassen\iniHandling.vb" />
+    <Compile Include="Klassen\logging.vb" />
+    <Compile Include="Klassen\mqtt.vb" />
+    <Compile Include="Klassen\mqtt_payload\tags.vb" />
+    <Compile Include="Klassen\UpdateHandler.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Dataset\SAP.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\SAP.vb">
+      <DependentUpon>SAP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Klassen\SAP_XML.vb" />
+    <Compile Include="Klassen\Wats.vb" />
+    <Compile Include="Forms\Toggle.Designer.vb">
+      <DependentUpon>Toggle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Toggle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dataset\ProgrammübersichtDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProgrammübersichtDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\_SSN_ASN_MatchTableDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_SSN_ASN_MatchTableDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Changelog.resx">
+      <DependentUpon>Changelog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Einstellungen.resx">
+      <DependentUpon>Einstellungen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FehlerWATS.resx">
+      <DependentUpon>FehlerWATS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_AenderungDetail.resx">
+      <DependentUpon>frm_AenderungDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ausschuss.resx">
+      <DependentUpon>frm_ausschuss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Frm_Barcodevb.resx">
+      <DependentUpon>Frm_Barcodevb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Dok.resx">
+      <DependentUpon>frm_Dok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_FaufSearch.resx">
+      <DependentUpon>frm_FaufSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Info.resx">
+      <DependentUpon>frm_Info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_inputBox.resx">
+      <DependentUpon>frm_inputBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Passwort.resx">
+      <DependentUpon>frm_Passwort.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_pcbAbruf.resx">
+      <DependentUpon>frm_pcbAbruf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_print.resx">
+      <DependentUpon>frm_print.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ProdKontrolle.resx">
+      <DependentUpon>frm_ProdKontrolle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_ProdKontrolle_Detail.resx">
+      <DependentUpon>frm_ProdKontrolle_Detail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Ruckmelden.resx">
+      <DependentUpon>frm_Ruckmelden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Ruckstand.resx">
+      <DependentUpon>frm_Ruckstand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_scanPcb.resx">
+      <DependentUpon>frm_scanPcb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_Stueckliste.resx">
+      <DependentUpon>frm_Stueckliste.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_supportAnfrage.resx">
+      <DependentUpon>frm_supportAnfrage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LinieAuswaehlen.resx">
+      <DependentUpon>LinieAuswaehlen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OEEDetails.resx">
+      <DependentUpon>OEEDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\v-checkKontrolle.resx">
+      <DependentUpon>v-checkKontrolle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Dataset\DS_Ausschuss.xsc">
+      <DependentUpon>DS_Ausschuss.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_Ausschuss.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Ausschuss.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\DS_Ausschuss.xss">
+      <DependentUpon>DS_Ausschuss.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_Incident.xsc">
+      <DependentUpon>DS_Incident.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_Incident.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_Incident.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\DS_Incident.xss">
+      <DependentUpon>DS_Incident.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_OPM_OEE.xsc">
+      <DependentUpon>DS_OPM_OEE.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_OPM_OEE.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_OPM_OEE.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\DS_OPM_OEE.xss">
+      <DependentUpon>DS_OPM_OEE.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_PET_Mitarbeiter.xsc">
+      <DependentUpon>DS_PET_Mitarbeiter.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_PET_Mitarbeiter.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PET_Mitarbeiter.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\DS_PET_Mitarbeiter.xss">
+      <DependentUpon>DS_PET_Mitarbeiter.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_ProdKontrolle.xsc">
+      <DependentUpon>DS_ProdKontrolle.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_ProdKontrolle.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_ProdKontrolle.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\DS_ProdKontrolle.xss">
+      <DependentUpon>DS_ProdKontrolle.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_vCheck.xsc">
+      <DependentUpon>DS_vCheck.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\DS_vCheck.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_vCheck.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\DS_vCheck.xss">
+      <DependentUpon>DS_vCheck.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\MatchTablesDataSet.xsc">
+      <DependentUpon>MatchTablesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\MatchTablesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MatchTablesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\MatchTablesDataSet.xss">
+      <DependentUpon>MatchTablesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ProgrammübersichtDataSet.xsc">
+      <DependentUpon>ProgrammübersichtDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\ProgrammübersichtDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProgrammübersichtDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\ProgrammübersichtDataSet.xss">
+      <DependentUpon>ProgrammübersichtDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DigitalesHeijunka_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Ausschuss.datasource" />
+    <None Include="My Project\DataSources\Form1.heijunkaResult1.datasource" />
+    <None Include="My Project\DataSources\ProdKontrolle.DS_ProdKontrolleTableAdapters.tbl_ausschussTableAdapter.datasource" />
+    <None Include="My Project\DataSources\Vorgangsuebersicht.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Sonstiges\App.config" />
+    <None Include="Sonstiges\packages.config" />
+    <None Include="Sonstiges\ProdKontrolle_TemporaryKey.pfx" />
+    <None Include="Dataset\SAP.xsc">
+      <DependentUpon>SAP.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\SAP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAP.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dataset\SAP.xss">
+      <DependentUpon>SAP.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\_SSN_ASN_MatchTableDataSet.xsc">
+      <DependentUpon>_SSN_ASN_MatchTableDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\_SSN_ASN_MatchTableDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_SSN_ASN_MatchTableDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\_SSN_ASN_MatchTableDataSet.xss">
+      <DependentUpon>_SSN_ASN_MatchTableDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ausrufezeichen.png" />
+    <None Include="Resources\Checkliste.png" />
+    <None Include="Resources\hilfe.png" />
+    <None Include="Resources\rueckstand.png" />
+    <None Include="Resources\K2_Box.png" />
+    <None Include="Resources\K2_Box_gebucht.png" />
+    <None Include="Resources\Rack.png" />
+    <None Include="Resources\Rack_gebucht.png" />
+    <None Include="Resources\tenor.gif" />
+    <None Include="Resources\loading-spinner-gif-3.gif" />
+    <None Include="Resources\1200px-Gtk-dialog-info.svg.png" />
+    <None Include="Resources\lupe_plus.png" />
+    <None Include="Resources\lupe_minus.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\arrow_zurück.png" />
+    <None Include="Resources\gruenerhacken.png" />
+    <None Include="Resources\platzhalter.png" />
+    <None Include="Resources\vc.png" />
+    <None Include="Resources\noWats.png" />
+    <None Include="Resources\FIFO_CEVA_Small.png" />
+    <None Include="Resources\squix4_800.jpg" />
+    <None Include="Resources\squix4_8001.jpg" />
+    <None Include="Resources\squix4_8002.jpg" />
+    <None Include="Resources\PTP950NW_right.png" />
+    <None Include="Resources\valor.png" />
+    <None Include="Resources\weis.png" />
+    <None Include="Resources\pcb.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\list1.png" />
+    <None Include="Resources\support.png" />
+    <None Include="Resources\multimedia.png" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\checklist.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\help-desk.png" />
+    <None Include="Resources\question.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\export.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\sap.png" />
+    <None Include="Resources\backlog.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\asm.png" />
+    <None Include="Resources\excel.png" />
+    <None Include="Resources\updated.png" />
+    <None Include="Resources\iphone.png" />
+    <None Include="Resources\help-desk %281%29.png" />
+    <None Include="Resources\trashbin.png" />
+    <Content Include="Sonstiges\favicon %285%29.ico" />
+    <None Include="Resources\Karton_gebucht.png" />
+    <None Include="Resources\Karton.png" />
+    <None Include="Resources\DC_box_gebucht.png" />
+    <None Include="Resources\DC_box.png" />
+    <None Include="Resources\menuEinstellungen.png" />
+    <None Include="Resources\menuBeenden.png" />
+    <None Include="Resources\MenuDatei.png" />
+    <None Include="Resources\MenuAuftrag.png" />
+    <None Include="Resources\scharz_voll.png" />
+    <None Include="Resources\scharz_halb.png" />
+    <None Include="Resources\rot_voll.png" />
+    <None Include="Resources\rot_halb.png" />
+    <None Include="Resources\gruen_voll.png" />
+    <None Include="Resources\gruen_halb.png" />
+    <None Include="Resources\braun_voll.png" />
+    <None Include="Resources\braun_halb.png" />
+    <None Include="Resources\blau_voll.png" />
+    <None Include="Resources\blau_halb.png" />
+    <None Include="Resources\erledigt.png" />
+    <None Include="Resources\barcodescanner.png" />
+    <None Include="Resources\stift.png" />
+    <None Include="Resources\Datenbank.png" />
+    <None Include="Resources\stuli.png" />
+    <None Include="Resources\2DCode.png" />
+    <None Include="Resources\wats.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

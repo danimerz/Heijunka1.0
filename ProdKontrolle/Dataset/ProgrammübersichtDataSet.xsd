@@ -1,0 +1,728 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ProgrammübersichtDataSet" targetNamespace="http://tempuri.org/ProgrammübersichtDataSet.xsd" xmlns:mstns="http://tempuri.org/ProgrammübersichtDataSet.xsd" xmlns="http://tempuri.org/ProgrammübersichtDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="3" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SMTConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SMTConnectionString (MySettings)" PropertyReference="ApplicationSettings.ProdKontrolle.My.MySettings.GlobalReference.Default.SMTConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MatchTablesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MatchTablesConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdKontrolle.My.MySettings.GlobalReference.Default.MatchTablesConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="MatchTablesConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MatchTablesConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdKontrolle.My.MySettings.GlobalReference.Default.MatchTablesConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="SMTConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SMTConnectionString1 (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ProdKontrolle.My.MySettings.GlobalReference.Default.SMTConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PU_tbl_StammTableAdapter" GeneratorDataComponentClassName="PU_tbl_StammTableAdapter" Name="PU_tbl_Stamm" UserDataComponentName="PU_tbl_StammTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SMTConnectionString1 (MySettings)" DbObjectName="MatchTables.dbo.PU_tbl_Stamm" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [PU_tbl_Stamm] ([ID], [Bezeichnung], [Material], [Mat_SAP], [ID_Material], [Stückliste/Report], [ID_Stückliste], [Vorgang1], [ID_V 1], [LP_Nr], [ID_LP], [Vorgang2], [ID_V2], [Dispo], [ID_Dispo], [RW_VG1], [NXT_VG1], [Fi_Ma_Art], [Fi_Ma_1PosXY_VG1], [Fi_Ma_2PosXY_VG1], [Fi_Ma_1PosXY_VG2], [Fi_Ma_2PosXY_VG2], [RW_VG2], [NXT_VG2], [Hub_VG1], [Hub_VG2], [Anz LP/NU], [GRL], [YLL], [BLL], [PUL], [KZ_VG1], [KZ_VG2], [RNW_VG1], [RNW_VG2], [Medium_VG1], [Medium_VG2], [Profil_VG1], [Profil_VG2], [ProfilName_VG1], [ProfilName_VG2], [LP_Breite], [LP_Länge], [1 Programm], [Bemerkungen_VG1], [Bemerkungen_VG2], [Erstellt am], [Vis], [Geprüft am], [Vis_Ge], [Interne_Bemerkung], [Erledigt], [Cap_SMD_Linie], [Cap_SMD_SiPr], [Cap_Nach_SMD], [Handeintrag], [Extra_Eye], [EE_Bemerkung], [Cap_Referenz], [EE_an_AOI_ap], [AOI_In], [AOI_In_Ko_EE], [HE_V1], [HE_Bemerkung], [Bem_Alle], [Info_zu_Index], [Cluster], [SonderNozzle], [MU-Höhe oben VG1], [MU-Höhe unten VG1], [Mu-Breite VG1], [MU-Höhe oben VG2], [MU-Höhe unten VG2], [Mu-Breite VG2], [THR], [N2_Löten], [N2_Verfärbung], [SPI], [Klebepunkte], [Inlinie_AOI], [DMC], [L_Tray], [µPBoards], [L5_Fix], [mBom], [ATB], [TZ_VG1], [TZ_VG2], [TZ_VG1_100], [TZ_VG2_100], [SchablDicke_VG1], [SchablDicke_VG2], [Bauteil_Hoehe_Oben], [Bauteil_Hoehe_Unten], [LP_Dicke]) VALUES (@ID, @Bezeichnung, @Material, @Mat_SAP, @ID_Material, @p1, @ID_Stückliste, @Vorgang1, @ID_V_1, @LP_Nr, @ID_LP, @Vorgang2, @ID_V2, @Dispo, @ID_Dispo, @RW_VG1, @NXT_VG1, @Fi_Ma_Art, @Fi_Ma_1PosXY_VG1, @Fi_Ma_2PosXY_VG1, @Fi_Ma_1PosXY_VG2, @Fi_Ma_2PosXY_VG2, @RW_VG2, @NXT_VG2, @Hub_VG1, @Hub_VG2, @p4, @GRL, @YLL, @BLL, @PUL, @KZ_VG1, @KZ_VG2, @RNW_VG1, @RNW_VG2, @Medium_VG1, @Medium_VG2, @Profil_VG1, @Profil_VG2, @ProfilName_VG1, @ProfilName_VG2, @LP_Breite, @LP_Länge, @p7, @Bemerkungen_VG1, @Bemerkungen_VG2, @Erstellt_am, @Vis, @Geprüft_am, @Vis_Ge, @Interne_Bemerkung, @Erledigt, @Cap_SMD_Linie, @Cap_SMD_SiPr, @Cap_Nach_SMD, @Handeintrag, @Extra_Eye, @EE_Bemerkung, @Cap_Referenz, @EE_an_AOI_ap, @AOI_In, @AOI_In_Ko_EE, @HE_V1, @HE_Bemerkung, @Bem_Alle, @Info_zu_Index, @Cluster, @SonderNozzle, @p10, @p12, @p14, @p17, @p19, @p21, @THR, @N2_Löten, @N2_Verfärbung, @SPI, @Klebepunkte, @Inlinie_AOI, @DMC, @L_Tray, @µPBoards, @L5_Fix, @mBom, @ATB, @TZ_VG1, @TZ_VG2, @TZ_VG1_100, @TZ_VG2_100, @SchablDicke_VG1, @SchablDicke_VG2, @Bauteil_Hoehe_Oben, @Bauteil_Hoehe_Unten, @LP_Dicke)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@ID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Bezeichnung" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Bezeichnung" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Material" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Material" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Mat_SAP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Mat_SAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ID_Material" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ID_Material" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Stückliste/Report" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ID_Stückliste" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ID_Stückliste" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vorgang1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vorgang1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ID_V_1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ID_V 1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LP_Nr" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LP_Nr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ID_LP" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ID_LP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vorgang2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vorgang2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ID_V2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ID_V2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Dispo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Dispo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ID_Dispo" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ID_Dispo" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RW_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RW_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NXT_VG1" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NXT_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fi_Ma_Art" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fi_Ma_Art" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fi_Ma_1PosXY_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fi_Ma_1PosXY_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fi_Ma_2PosXY_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fi_Ma_2PosXY_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fi_Ma_1PosXY_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fi_Ma_1PosXY_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Fi_Ma_2PosXY_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Fi_Ma_2PosXY_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RW_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RW_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NXT_VG2" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NXT_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hub_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hub_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Hub_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Hub_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p4" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Anz LP/NU" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@GRL" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="GRL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@YLL" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="YLL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@BLL" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="BLL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@PUL" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="PUL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@KZ_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="KZ_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@KZ_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="KZ_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RNW_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RNW_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@RNW_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="RNW_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Medium_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Medium_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Medium_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Medium_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Profil_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Profil_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Profil_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Profil_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ProfilName_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ProfilName_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@ProfilName_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="ProfilName_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LP_Breite" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LP_Breite" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LP_Länge" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LP_Länge" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p7" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="1 Programm" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Bemerkungen_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Bemerkungen_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Bemerkungen_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Bemerkungen_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Erstellt_am" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Erstellt am" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vis" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vis" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Geprüft_am" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Geprüft am" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Vis_Ge" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Vis_Ge" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Interne_Bemerkung" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Interne_Bemerkung" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Erledigt" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Erledigt" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Cap_SMD_Linie" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Cap_SMD_Linie" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Cap_SMD_SiPr" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Cap_SMD_SiPr" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Cap_Nach_SMD" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Cap_Nach_SMD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Handeintrag" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Handeintrag" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Extra_Eye" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="Extra_Eye" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@EE_Bemerkung" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="EE_Bemerkung" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cap_Referenz" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cap_Referenz" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@EE_an_AOI_ap" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="EE_an_AOI_ap" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@AOI_In" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="AOI_In" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@AOI_In_Ko_EE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="AOI_In_Ko_EE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@HE_V1" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="HE_V1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@HE_Bemerkung" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="HE_Bemerkung" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Bem_Alle" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Bem_Alle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Info_zu_Index" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Info_zu_Index" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Cluster" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Cluster" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SonderNozzle" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SonderNozzle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@p10" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="MU-Höhe oben VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@p12" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="MU-Höhe unten VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p14" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Mu-Breite VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@p17" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="MU-Höhe oben VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@p19" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="MU-Höhe unten VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@p21" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Mu-Breite VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@THR" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="THR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@N2_Löten" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="N2_Löten" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@N2_Verfärbung" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="N2_Verfärbung" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@SPI" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="SPI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Klebepunkte" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Klebepunkte" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@Inlinie_AOI" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="Inlinie_AOI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@DMC" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="DMC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@L_Tray" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="L_Tray" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@µPBoards" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="µPBoards" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@L5_Fix" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="L5_Fix" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@mBom" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="mBom" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@ATB" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ATB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@TZ_VG1" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TZ_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@TZ_VG2" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TZ_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@TZ_VG1_100" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TZ_VG1_100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@TZ_VG2_100" Precision="18" ProviderType="Decimal" Scale="2" Size="0" SourceColumn="TZ_VG2_100" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SchablDicke_VG1" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SchablDicke_VG1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@SchablDicke_VG2" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="SchablDicke_VG2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Bauteil_Hoehe_Oben" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Bauteil_Hoehe_Oben" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Bauteil_Hoehe_Unten" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="Bauteil_Hoehe_Unten" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@LP_Dicke" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="LP_Dicke" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        PU_tbl_Stamm.*
+FROM            PU_tbl_Stamm</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Bezeichnung" DataSetColumn="Bezeichnung" />
+              <Mapping SourceColumn="Material" DataSetColumn="Material" />
+              <Mapping SourceColumn="Mat_SAP" DataSetColumn="Mat_SAP" />
+              <Mapping SourceColumn="ID_Material" DataSetColumn="ID_Material" />
+              <Mapping SourceColumn="Stückliste/Report" DataSetColumn="Stückliste/Report" />
+              <Mapping SourceColumn="ID_Stückliste" DataSetColumn="ID_Stückliste" />
+              <Mapping SourceColumn="Vorgang1" DataSetColumn="Vorgang1" />
+              <Mapping SourceColumn="ID_V 1" DataSetColumn="ID_V 1" />
+              <Mapping SourceColumn="LP_Nr" DataSetColumn="LP_Nr" />
+              <Mapping SourceColumn="ID_LP" DataSetColumn="ID_LP" />
+              <Mapping SourceColumn="Vorgang2" DataSetColumn="Vorgang2" />
+              <Mapping SourceColumn="ID_V2" DataSetColumn="ID_V2" />
+              <Mapping SourceColumn="Dispo" DataSetColumn="Dispo" />
+              <Mapping SourceColumn="ID_Dispo" DataSetColumn="ID_Dispo" />
+              <Mapping SourceColumn="RW_VG1" DataSetColumn="RW_VG1" />
+              <Mapping SourceColumn="NXT_VG1" DataSetColumn="NXT_VG1" />
+              <Mapping SourceColumn="Fi_Ma_Art" DataSetColumn="Fi_Ma_Art" />
+              <Mapping SourceColumn="Fi_Ma_1PosXY_VG1" DataSetColumn="Fi_Ma_1PosXY_VG1" />
+              <Mapping SourceColumn="Fi_Ma_2PosXY_VG1" DataSetColumn="Fi_Ma_2PosXY_VG1" />
+              <Mapping SourceColumn="Fi_Ma_1PosXY_VG2" DataSetColumn="Fi_Ma_1PosXY_VG2" />
+              <Mapping SourceColumn="Fi_Ma_2PosXY_VG2" DataSetColumn="Fi_Ma_2PosXY_VG2" />
+              <Mapping SourceColumn="RW_VG2" DataSetColumn="RW_VG2" />
+              <Mapping SourceColumn="NXT_VG2" DataSetColumn="NXT_VG2" />
+              <Mapping SourceColumn="Hub_VG1" DataSetColumn="Hub_VG1" />
+              <Mapping SourceColumn="Hub_VG2" DataSetColumn="Hub_VG2" />
+              <Mapping SourceColumn="Anz LP/NU" DataSetColumn="Anz LP/NU" />
+              <Mapping SourceColumn="GRL" DataSetColumn="GRL" />
+              <Mapping SourceColumn="YLL" DataSetColumn="YLL" />
+              <Mapping SourceColumn="BLL" DataSetColumn="BLL" />
+              <Mapping SourceColumn="PUL" DataSetColumn="PUL" />
+              <Mapping SourceColumn="KZ_VG1" DataSetColumn="KZ_VG1" />
+              <Mapping SourceColumn="KZ_VG2" DataSetColumn="KZ_VG2" />
+              <Mapping SourceColumn="RNW_VG1" DataSetColumn="RNW_VG1" />
+              <Mapping SourceColumn="RNW_VG2" DataSetColumn="RNW_VG2" />
+              <Mapping SourceColumn="Medium_VG1" DataSetColumn="Medium_VG1" />
+              <Mapping SourceColumn="Medium_VG2" DataSetColumn="Medium_VG2" />
+              <Mapping SourceColumn="Profil_VG1" DataSetColumn="Profil_VG1" />
+              <Mapping SourceColumn="Profil_VG2" DataSetColumn="Profil_VG2" />
+              <Mapping SourceColumn="ProfilName_VG1" DataSetColumn="ProfilName_VG1" />
+              <Mapping SourceColumn="ProfilName_VG2" DataSetColumn="ProfilName_VG2" />
+              <Mapping SourceColumn="LP_Breite" DataSetColumn="LP_Breite" />
+              <Mapping SourceColumn="LP_Länge" DataSetColumn="LP_Länge" />
+              <Mapping SourceColumn="1 Programm" DataSetColumn="1 Programm" />
+              <Mapping SourceColumn="Bemerkungen_VG1" DataSetColumn="Bemerkungen_VG1" />
+              <Mapping SourceColumn="Bemerkungen_VG2" DataSetColumn="Bemerkungen_VG2" />
+              <Mapping SourceColumn="Erstellt am" DataSetColumn="Erstellt am" />
+              <Mapping SourceColumn="Vis" DataSetColumn="Vis" />
+              <Mapping SourceColumn="Geprüft am" DataSetColumn="Geprüft am" />
+              <Mapping SourceColumn="Vis_Ge" DataSetColumn="Vis_Ge" />
+              <Mapping SourceColumn="Interne_Bemerkung" DataSetColumn="Interne_Bemerkung" />
+              <Mapping SourceColumn="Erledigt" DataSetColumn="Erledigt" />
+              <Mapping SourceColumn="Cap_SMD_Linie" DataSetColumn="Cap_SMD_Linie" />
+              <Mapping SourceColumn="Cap_SMD_SiPr" DataSetColumn="Cap_SMD_SiPr" />
+              <Mapping SourceColumn="Cap_Nach_SMD" DataSetColumn="Cap_Nach_SMD" />
+              <Mapping SourceColumn="Handeintrag" DataSetColumn="Handeintrag" />
+              <Mapping SourceColumn="Extra_Eye" DataSetColumn="Extra_Eye" />
+              <Mapping SourceColumn="EE_Bemerkung" DataSetColumn="EE_Bemerkung" />
+              <Mapping SourceColumn="Cap_Referenz" DataSetColumn="Cap_Referenz" />
+              <Mapping SourceColumn="EE_an_AOI_ap" DataSetColumn="EE_an_AOI_ap" />
+              <Mapping SourceColumn="AOI_In" DataSetColumn="AOI_In" />
+              <Mapping SourceColumn="AOI_In_Ko_EE" DataSetColumn="AOI_In_Ko_EE" />
+              <Mapping SourceColumn="HE_V1" DataSetColumn="HE_V1" />
+              <Mapping SourceColumn="HE_Bemerkung" DataSetColumn="HE_Bemerkung" />
+              <Mapping SourceColumn="Bem_Alle" DataSetColumn="Bem_Alle" />
+              <Mapping SourceColumn="Info_zu_Index" DataSetColumn="Info_zu_Index" />
+              <Mapping SourceColumn="Cluster" DataSetColumn="Cluster" />
+              <Mapping SourceColumn="SonderNozzle" DataSetColumn="SonderNozzle" />
+              <Mapping SourceColumn="MU-Höhe oben VG1" DataSetColumn="MU-Höhe oben VG1" />
+              <Mapping SourceColumn="MU-Höhe unten VG1" DataSetColumn="MU-Höhe unten VG1" />
+              <Mapping SourceColumn="Mu-Breite VG1" DataSetColumn="Mu-Breite VG1" />
+              <Mapping SourceColumn="MU-Höhe oben VG2" DataSetColumn="MU-Höhe oben VG2" />
+              <Mapping SourceColumn="MU-Höhe unten VG2" DataSetColumn="MU-Höhe unten VG2" />
+              <Mapping SourceColumn="Mu-Breite VG2" DataSetColumn="Mu-Breite VG2" />
+              <Mapping SourceColumn="THR" DataSetColumn="THR" />
+              <Mapping SourceColumn="N2_Löten" DataSetColumn="N2_Löten" />
+              <Mapping SourceColumn="N2_Verfärbung" DataSetColumn="N2_Verfärbung" />
+              <Mapping SourceColumn="SPI" DataSetColumn="SPI" />
+              <Mapping SourceColumn="Klebepunkte" DataSetColumn="Klebepunkte" />
+              <Mapping SourceColumn="Inlinie_AOI" DataSetColumn="Inlinie_AOI" />
+              <Mapping SourceColumn="DMC" DataSetColumn="DMC" />
+              <Mapping SourceColumn="L_Tray" DataSetColumn="L_Tray" />
+              <Mapping SourceColumn="µPBoards" DataSetColumn="µPBoards" />
+              <Mapping SourceColumn="L5_Fix" DataSetColumn="L5_Fix" />
+              <Mapping SourceColumn="mBom" DataSetColumn="mBom" />
+              <Mapping SourceColumn="ATB" DataSetColumn="ATB" />
+              <Mapping SourceColumn="TZ_VG1" DataSetColumn="TZ_VG1" />
+              <Mapping SourceColumn="TZ_VG2" DataSetColumn="TZ_VG2" />
+              <Mapping SourceColumn="TZ_VG1_100" DataSetColumn="TZ_VG1_100" />
+              <Mapping SourceColumn="TZ_VG2_100" DataSetColumn="TZ_VG2_100" />
+              <Mapping SourceColumn="SchablDicke_VG1" DataSetColumn="SchablDicke_VG1" />
+              <Mapping SourceColumn="SchablDicke_VG2" DataSetColumn="SchablDicke_VG2" />
+              <Mapping SourceColumn="Bauteil_Hoehe_Oben" DataSetColumn="Bauteil_Hoehe_Oben" />
+              <Mapping SourceColumn="Bauteil_Hoehe_Unten" DataSetColumn="Bauteil_Hoehe_Unten" />
+              <Mapping SourceColumn="LP_Dicke" DataSetColumn="LP_Dicke" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="SMTConnectionString1 (MySettings)" DbObjectName="MatchTables.dbo.PU_tbl_Stamm" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySAPMat" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBySAPMat" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySAPMat" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        PU_tbl_Stamm.*
+FROM            PU_tbl_Stamm
+WHERE        (Mat_SAP = @Material)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Material" ColumnName="Mat_SAP" DataSourceName="MatchTables.dbo.PU_tbl_Stamm" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@Material" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Mat_SAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SMTConnectionString1 (MySettings)" DbObjectName="MatchTables.dbo.PU_tbl_Stamm" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetClusterByMatSAP" Modifier="Public" Name="GetClusterByMatSAP" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="GetClusterByMatSAP">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        Cluster
+FROM            PU_tbl_Stamm
+WHERE        (Mat_SAP = @Material)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Material" ColumnName="Mat_SAP" DataSourceName="MatchTables.dbo.PU_tbl_Stamm" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@Material" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Mat_SAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SMTConnectionString1 (MySettings)" DbObjectName="MatchTables.dbo.PU_tbl_Stamm" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByMaterialSAP" GetMethodModifier="Public" GetMethodName="GetDataByMaterialSAP" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByMaterialSAP" UserSourceName="GetDataByMaterialSAP">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID, Bezeichnung, Material, Mat_SAP, ID_Material, [Stückliste/Report], ID_Stückliste, Vorgang1, [ID_V 1], LP_Nr, ID_LP, Vorgang2, ID_V2, Dispo, ID_Dispo, RW_VG1, NXT_VG1, Fi_Ma_Art, Fi_Ma_1PosXY_VG1, 
+                         Fi_Ma_2PosXY_VG1, Fi_Ma_1PosXY_VG2, Fi_Ma_2PosXY_VG2, RW_VG2, NXT_VG2, Hub_VG1, Hub_VG2, [Anz LP/NU], GRL, YLL, BLL, KZ_VG1, KZ_VG2, RNW_VG1, RNW_VG2, Medium_VG1, Medium_VG2, Profil_VG1, 
+                         Profil_VG2, LP_Breite, LP_Länge, [1 Programm], Bemerkungen_VG1, Bemerkungen_VG2, [Erstellt am], Vis, [Geprüft am], Vis_Ge, Interne_Bemerkung, Erledigt, Cap_SMD_Linie, Cap_SMD_SiPr, Cap_Nach_SMD, Handeintrag, 
+                         Extra_Eye, EE_Bemerkung, Cap_Referenz, EE_an_AOI_ap, AOI_In, AOI_In_Ko_EE, HE_V1, HE_Bemerkung, Bem_Alle, Info_zu_Index, Cluster, SonderNozzle, [MU-Höhe oben VG1], [MU-Höhe unten VG1], [Mu-Breite VG1], 
+                         [MU-Höhe oben VG2], [MU-Höhe unten VG2], [Mu-Breite VG2], THR, N2_Löten, N2_Verfärbung, SPI, Klebepunkte, Inlinie_AOI, DMC, L_Tray, µPBoards, L5_Fix, mBom, ATB, TZ_VG1, TZ_VG2, TZ_VG1_100, TZ_VG2_100, 
+                         ProfilName_VG1, ProfilName_VG2, SchablDicke_VG1, SchablDicke_VG2, Bauteil_Hoehe_Oben, Bauteil_Hoehe_Unten, LP_Dicke
+FROM            PU_tbl_Stamm
+WHERE        (Mat_SAP = @Material)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Material" ColumnName="Mat_SAP" DataSourceName="MatchTables.dbo.PU_tbl_Stamm" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@Material" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Mat_SAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="SMTConnectionString1 (MySettings)" DbObjectName="MatchTables.dbo.PU_tbl_Stamm" DbObjectType="Table" GenerateShortCommands="true" GeneratorSourceName="GetLPBreiteByMatSAP" Modifier="Public" Name="GetLPBreiteByMatSAP" QueryType="Scalar" ScalarCallRetval="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="GetLPBreiteByMatSAP">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        LP_Breite
+FROM            PU_tbl_Stamm
+WHERE        (Mat_SAP = @Material)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="Material" ColumnName="Mat_SAP" DataSourceName="MatchTables.dbo.PU_tbl_Stamm" DataTypeServer="nvarchar(20)" DbType="String" Direction="Input" ParameterName="@Material" Precision="0" ProviderType="NVarChar" Scale="0" Size="20" SourceColumn="Mat_SAP" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ProgrammübersichtDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ProgrammübersichtDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ProgrammübersichtDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PU_tbl_Stamm" msprop:Generator_RowClassName="PU_tbl_StammRow" msprop:Generator_RowEvHandlerName="PU_tbl_StammRowChangeEventHandler" msprop:Generator_RowDeletedName="PU_tbl_StammRowDeleted" msprop:Generator_RowDeletingName="PU_tbl_StammRowDeleting" msprop:Generator_RowEvArgName="PU_tbl_StammRowChangeEvent" msprop:Generator_TablePropName="PU_tbl_Stamm" msprop:Generator_RowChangedName="PU_tbl_StammRowChanged" msprop:Generator_UserTableName="PU_tbl_Stamm" msprop:Generator_RowChangingName="PU_tbl_StammRowChanging" msprop:Generator_TableClassName="PU_tbl_StammDataTable" msprop:Generator_TableVarName="tablePU_tbl_Stamm">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnVarNameInTable="columnID" type="xs:int" />
+              <xs:element name="Bezeichnung" msprop:Generator_UserColumnName="Bezeichnung" msprop:Generator_ColumnPropNameInTable="BezeichnungColumn" msprop:Generator_ColumnPropNameInRow="Bezeichnung" msprop:Generator_ColumnVarNameInTable="columnBezeichnung" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Material" msprop:Generator_UserColumnName="Material" msprop:Generator_ColumnPropNameInTable="MaterialColumn" msprop:Generator_ColumnPropNameInRow="Material" msprop:Generator_ColumnVarNameInTable="columnMaterial">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="26" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mat_SAP" msprop:Generator_UserColumnName="Mat_SAP" msprop:Generator_ColumnPropNameInTable="Mat_SAPColumn" msprop:Generator_ColumnPropNameInRow="Mat_SAP" msprop:Generator_ColumnVarNameInTable="columnMat_SAP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Material" msprop:Generator_UserColumnName="ID_Material" msprop:Generator_ColumnPropNameInTable="ID_MaterialColumn" msprop:Generator_ColumnPropNameInRow="ID_Material" msprop:Generator_ColumnVarNameInTable="columnID_Material" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stückliste_x002F_Report" msprop:Generator_UserColumnName="Stückliste/Report" msprop:Generator_ColumnPropNameInTable="_Stückliste_ReportColumn" msprop:Generator_ColumnPropNameInRow="_Stückliste_Report" msprop:Generator_ColumnVarNameInTable="_columnStückliste_Report" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Stückliste" msprop:Generator_UserColumnName="ID_Stückliste" msprop:Generator_ColumnPropNameInTable="ID_StücklisteColumn" msprop:Generator_ColumnPropNameInRow="ID_Stückliste" msprop:Generator_ColumnVarNameInTable="columnID_Stückliste" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vorgang1" msprop:Generator_UserColumnName="Vorgang1" msprop:Generator_ColumnPropNameInTable="Vorgang1Column" msprop:Generator_ColumnPropNameInRow="Vorgang1" msprop:Generator_ColumnVarNameInTable="columnVorgang1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_V_x0020_1" msprop:Generator_UserColumnName="ID_V 1" msprop:Generator_ColumnPropNameInTable="ID_V_1Column" msprop:Generator_ColumnPropNameInRow="ID_V_1" msprop:Generator_ColumnVarNameInTable="columnID_V_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LP_Nr" msprop:Generator_UserColumnName="LP_Nr" msprop:Generator_ColumnPropNameInTable="LP_NrColumn" msprop:Generator_ColumnPropNameInRow="LP_Nr" msprop:Generator_ColumnVarNameInTable="columnLP_Nr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_LP" msprop:Generator_UserColumnName="ID_LP" msprop:Generator_ColumnPropNameInTable="ID_LPColumn" msprop:Generator_ColumnPropNameInRow="ID_LP" msprop:Generator_ColumnVarNameInTable="columnID_LP" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vorgang2" msprop:Generator_UserColumnName="Vorgang2" msprop:Generator_ColumnPropNameInTable="Vorgang2Column" msprop:Generator_ColumnPropNameInRow="Vorgang2" msprop:Generator_ColumnVarNameInTable="columnVorgang2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_V2" msprop:Generator_UserColumnName="ID_V2" msprop:Generator_ColumnPropNameInTable="ID_V2Column" msprop:Generator_ColumnPropNameInRow="ID_V2" msprop:Generator_ColumnVarNameInTable="columnID_V2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dispo" msprop:Generator_UserColumnName="Dispo" msprop:Generator_ColumnPropNameInTable="DispoColumn" msprop:Generator_ColumnPropNameInRow="Dispo" msprop:Generator_ColumnVarNameInTable="columnDispo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID_Dispo" msprop:Generator_UserColumnName="ID_Dispo" msprop:Generator_ColumnPropNameInTable="ID_DispoColumn" msprop:Generator_ColumnPropNameInRow="ID_Dispo" msprop:Generator_ColumnVarNameInTable="columnID_Dispo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RW_VG1" msprop:Generator_UserColumnName="RW_VG1" msprop:Generator_ColumnPropNameInTable="RW_VG1Column" msprop:Generator_ColumnPropNameInRow="RW_VG1" msprop:Generator_ColumnVarNameInTable="columnRW_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NXT_VG1" msprop:Generator_UserColumnName="NXT_VG1" msprop:Generator_ColumnPropNameInTable="NXT_VG1Column" msprop:Generator_ColumnPropNameInRow="NXT_VG1" msprop:Generator_ColumnVarNameInTable="columnNXT_VG1" type="xs:int" minOccurs="0" />
+              <xs:element name="Fi_Ma_Art" msprop:Generator_UserColumnName="Fi_Ma_Art" msprop:Generator_ColumnPropNameInTable="Fi_Ma_ArtColumn" msprop:Generator_ColumnPropNameInRow="Fi_Ma_Art" msprop:Generator_ColumnVarNameInTable="columnFi_Ma_Art" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fi_Ma_1PosXY_VG1" msprop:Generator_UserColumnName="Fi_Ma_1PosXY_VG1" msprop:Generator_ColumnPropNameInTable="Fi_Ma_1PosXY_VG1Column" msprop:Generator_ColumnPropNameInRow="Fi_Ma_1PosXY_VG1" msprop:Generator_ColumnVarNameInTable="columnFi_Ma_1PosXY_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fi_Ma_2PosXY_VG1" msprop:Generator_UserColumnName="Fi_Ma_2PosXY_VG1" msprop:Generator_ColumnPropNameInTable="Fi_Ma_2PosXY_VG1Column" msprop:Generator_ColumnPropNameInRow="Fi_Ma_2PosXY_VG1" msprop:Generator_ColumnVarNameInTable="columnFi_Ma_2PosXY_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fi_Ma_1PosXY_VG2" msprop:Generator_UserColumnName="Fi_Ma_1PosXY_VG2" msprop:Generator_ColumnPropNameInTable="Fi_Ma_1PosXY_VG2Column" msprop:Generator_ColumnPropNameInRow="Fi_Ma_1PosXY_VG2" msprop:Generator_ColumnVarNameInTable="columnFi_Ma_1PosXY_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fi_Ma_2PosXY_VG2" msprop:Generator_UserColumnName="Fi_Ma_2PosXY_VG2" msprop:Generator_ColumnPropNameInTable="Fi_Ma_2PosXY_VG2Column" msprop:Generator_ColumnPropNameInRow="Fi_Ma_2PosXY_VG2" msprop:Generator_ColumnVarNameInTable="columnFi_Ma_2PosXY_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RW_VG2" msprop:Generator_UserColumnName="RW_VG2" msprop:Generator_ColumnPropNameInTable="RW_VG2Column" msprop:Generator_ColumnPropNameInRow="RW_VG2" msprop:Generator_ColumnVarNameInTable="columnRW_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NXT_VG2" msprop:Generator_UserColumnName="NXT_VG2" msprop:Generator_ColumnPropNameInTable="NXT_VG2Column" msprop:Generator_ColumnPropNameInRow="NXT_VG2" msprop:Generator_ColumnVarNameInTable="columnNXT_VG2" type="xs:int" minOccurs="0" />
+              <xs:element name="Hub_VG1" msprop:Generator_UserColumnName="Hub_VG1" msprop:Generator_ColumnPropNameInTable="Hub_VG1Column" msprop:Generator_ColumnPropNameInRow="Hub_VG1" msprop:Generator_ColumnVarNameInTable="columnHub_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Hub_VG2" msprop:Generator_UserColumnName="Hub_VG2" msprop:Generator_ColumnPropNameInTable="Hub_VG2Column" msprop:Generator_ColumnPropNameInRow="Hub_VG2" msprop:Generator_ColumnVarNameInTable="columnHub_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Anz_x0020_LP_x002F_NU" msprop:Generator_UserColumnName="Anz LP/NU" msprop:Generator_ColumnPropNameInTable="_Anz_LP_NUColumn" msprop:Generator_ColumnPropNameInRow="_Anz_LP_NU" msprop:Generator_ColumnVarNameInTable="_columnAnz_LP_NU" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GRL" msprop:Generator_UserColumnName="GRL" msprop:Generator_ColumnPropNameInTable="GRLColumn" msprop:Generator_ColumnPropNameInRow="GRL" msprop:Generator_ColumnVarNameInTable="columnGRL" type="xs:boolean" />
+              <xs:element name="YLL" msprop:Generator_UserColumnName="YLL" msprop:Generator_ColumnPropNameInTable="YLLColumn" msprop:Generator_ColumnPropNameInRow="YLL" msprop:Generator_ColumnVarNameInTable="columnYLL" type="xs:boolean" />
+              <xs:element name="BLL" msprop:Generator_UserColumnName="BLL" msprop:Generator_ColumnPropNameInTable="BLLColumn" msprop:Generator_ColumnPropNameInRow="BLL" msprop:Generator_ColumnVarNameInTable="columnBLL" type="xs:boolean" />
+              <xs:element name="PUL" msprop:Generator_UserColumnName="PUL" msprop:Generator_ColumnPropNameInTable="PULColumn" msprop:Generator_ColumnPropNameInRow="PUL" msprop:Generator_ColumnVarNameInTable="columnPUL" type="xs:boolean" />
+              <xs:element name="KZ_VG1" msprop:Generator_UserColumnName="KZ_VG1" msprop:Generator_ColumnPropNameInTable="KZ_VG1Column" msprop:Generator_ColumnPropNameInRow="KZ_VG1" msprop:Generator_ColumnVarNameInTable="columnKZ_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KZ_VG2" msprop:Generator_UserColumnName="KZ_VG2" msprop:Generator_ColumnPropNameInTable="KZ_VG2Column" msprop:Generator_ColumnPropNameInRow="KZ_VG2" msprop:Generator_ColumnVarNameInTable="columnKZ_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNW_VG1" msprop:Generator_UserColumnName="RNW_VG1" msprop:Generator_ColumnPropNameInTable="RNW_VG1Column" msprop:Generator_ColumnPropNameInRow="RNW_VG1" msprop:Generator_ColumnVarNameInTable="columnRNW_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RNW_VG2" msprop:Generator_UserColumnName="RNW_VG2" msprop:Generator_ColumnPropNameInTable="RNW_VG2Column" msprop:Generator_ColumnPropNameInRow="RNW_VG2" msprop:Generator_ColumnVarNameInTable="columnRNW_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Medium_VG1" msprop:Generator_UserColumnName="Medium_VG1" msprop:Generator_ColumnPropNameInTable="Medium_VG1Column" msprop:Generator_ColumnPropNameInRow="Medium_VG1" msprop:Generator_ColumnVarNameInTable="columnMedium_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Medium_VG2" msprop:Generator_UserColumnName="Medium_VG2" msprop:Generator_ColumnPropNameInTable="Medium_VG2Column" msprop:Generator_ColumnPropNameInRow="Medium_VG2" msprop:Generator_ColumnVarNameInTable="columnMedium_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Profil_VG1" msprop:Generator_UserColumnName="Profil_VG1" msprop:Generator_ColumnPropNameInTable="Profil_VG1Column" msprop:Generator_ColumnPropNameInRow="Profil_VG1" msprop:Generator_ColumnVarNameInTable="columnProfil_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Profil_VG2" msprop:Generator_UserColumnName="Profil_VG2" msprop:Generator_ColumnPropNameInTable="Profil_VG2Column" msprop:Generator_ColumnPropNameInRow="Profil_VG2" msprop:Generator_ColumnVarNameInTable="columnProfil_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProfilName_VG1" msprop:Generator_UserColumnName="ProfilName_VG1" msprop:Generator_ColumnPropNameInTable="ProfilName_VG1Column" msprop:Generator_ColumnPropNameInRow="ProfilName_VG1" msprop:Generator_ColumnVarNameInTable="columnProfilName_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProfilName_VG2" msprop:Generator_UserColumnName="ProfilName_VG2" msprop:Generator_ColumnPropNameInTable="ProfilName_VG2Column" msprop:Generator_ColumnPropNameInRow="ProfilName_VG2" msprop:Generator_ColumnVarNameInTable="columnProfilName_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LP_Breite" msprop:Generator_UserColumnName="LP_Breite" msprop:Generator_ColumnPropNameInTable="LP_BreiteColumn" msprop:Generator_ColumnPropNameInRow="LP_Breite" msprop:Generator_ColumnVarNameInTable="columnLP_Breite" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LP_Länge" msprop:Generator_UserColumnName="LP_Länge" msprop:Generator_ColumnPropNameInTable="LP_LängeColumn" msprop:Generator_ColumnPropNameInRow="LP_Länge" msprop:Generator_ColumnVarNameInTable="columnLP_Länge" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="_x0031__x0020_Programm" msprop:Generator_UserColumnName="1 Programm" msprop:Generator_ColumnPropNameInTable="_1_ProgrammColumn" msprop:Generator_ColumnPropNameInRow="_1_Programm" msprop:Generator_ColumnVarNameInTable="column1_Programm" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bemerkungen_VG1" msprop:Generator_UserColumnName="Bemerkungen_VG1" msprop:Generator_ColumnPropNameInTable="Bemerkungen_VG1Column" msprop:Generator_ColumnPropNameInRow="Bemerkungen_VG1" msprop:Generator_ColumnVarNameInTable="columnBemerkungen_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bemerkungen_VG2" msprop:Generator_UserColumnName="Bemerkungen_VG2" msprop:Generator_ColumnPropNameInTable="Bemerkungen_VG2Column" msprop:Generator_ColumnPropNameInRow="Bemerkungen_VG2" msprop:Generator_ColumnVarNameInTable="columnBemerkungen_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Erstellt_x0020_am" msprop:Generator_UserColumnName="Erstellt am" msprop:Generator_ColumnPropNameInTable="Erstellt_amColumn" msprop:Generator_ColumnPropNameInRow="Erstellt_am" msprop:Generator_ColumnVarNameInTable="columnErstellt_am" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Vis" msprop:Generator_UserColumnName="Vis" msprop:Generator_ColumnPropNameInTable="VisColumn" msprop:Generator_ColumnPropNameInRow="Vis" msprop:Generator_ColumnVarNameInTable="columnVis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Geprüft_x0020_am" msprop:Generator_UserColumnName="Geprüft am" msprop:Generator_ColumnPropNameInTable="Geprüft_amColumn" msprop:Generator_ColumnPropNameInRow="Geprüft_am" msprop:Generator_ColumnVarNameInTable="columnGeprüft_am" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Vis_Ge" msprop:Generator_UserColumnName="Vis_Ge" msprop:Generator_ColumnPropNameInTable="Vis_GeColumn" msprop:Generator_ColumnPropNameInRow="Vis_Ge" msprop:Generator_ColumnVarNameInTable="columnVis_Ge" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Interne_Bemerkung" msprop:Generator_UserColumnName="Interne_Bemerkung" msprop:Generator_ColumnPropNameInTable="Interne_BemerkungColumn" msprop:Generator_ColumnPropNameInRow="Interne_Bemerkung" msprop:Generator_ColumnVarNameInTable="columnInterne_Bemerkung" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Erledigt" msprop:Generator_UserColumnName="Erledigt" msprop:Generator_ColumnPropNameInTable="ErledigtColumn" msprop:Generator_ColumnPropNameInRow="Erledigt" msprop:Generator_ColumnVarNameInTable="columnErledigt" type="xs:boolean" />
+              <xs:element name="Cap_SMD_Linie" msprop:Generator_UserColumnName="Cap_SMD_Linie" msprop:Generator_ColumnPropNameInTable="Cap_SMD_LinieColumn" msprop:Generator_ColumnPropNameInRow="Cap_SMD_Linie" msprop:Generator_ColumnVarNameInTable="columnCap_SMD_Linie" type="xs:boolean" />
+              <xs:element name="Cap_SMD_SiPr" msprop:Generator_UserColumnName="Cap_SMD_SiPr" msprop:Generator_ColumnPropNameInTable="Cap_SMD_SiPrColumn" msprop:Generator_ColumnPropNameInRow="Cap_SMD_SiPr" msprop:Generator_ColumnVarNameInTable="columnCap_SMD_SiPr" type="xs:boolean" />
+              <xs:element name="Cap_Nach_SMD" msprop:Generator_UserColumnName="Cap_Nach_SMD" msprop:Generator_ColumnPropNameInTable="Cap_Nach_SMDColumn" msprop:Generator_ColumnPropNameInRow="Cap_Nach_SMD" msprop:Generator_ColumnVarNameInTable="columnCap_Nach_SMD" type="xs:boolean" />
+              <xs:element name="Handeintrag" msprop:Generator_UserColumnName="Handeintrag" msprop:Generator_ColumnPropNameInTable="HandeintragColumn" msprop:Generator_ColumnPropNameInRow="Handeintrag" msprop:Generator_ColumnVarNameInTable="columnHandeintrag" type="xs:boolean" />
+              <xs:element name="Extra_Eye" msprop:Generator_UserColumnName="Extra_Eye" msprop:Generator_ColumnPropNameInTable="Extra_EyeColumn" msprop:Generator_ColumnPropNameInRow="Extra_Eye" msprop:Generator_ColumnVarNameInTable="columnExtra_Eye" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EE_Bemerkung" msprop:Generator_UserColumnName="EE_Bemerkung" msprop:Generator_ColumnPropNameInTable="EE_BemerkungColumn" msprop:Generator_ColumnPropNameInRow="EE_Bemerkung" msprop:Generator_ColumnVarNameInTable="columnEE_Bemerkung" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cap_Referenz" msprop:Generator_UserColumnName="Cap_Referenz" msprop:Generator_ColumnPropNameInTable="Cap_ReferenzColumn" msprop:Generator_ColumnPropNameInRow="Cap_Referenz" msprop:Generator_ColumnVarNameInTable="columnCap_Referenz" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EE_an_AOI_ap" msprop:Generator_UserColumnName="EE_an_AOI_ap" msprop:Generator_ColumnPropNameInTable="EE_an_AOI_apColumn" msprop:Generator_ColumnPropNameInRow="EE_an_AOI_ap" msprop:Generator_ColumnVarNameInTable="columnEE_an_AOI_ap" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AOI_In" msprop:Generator_UserColumnName="AOI_In" msprop:Generator_ColumnPropNameInTable="AOI_InColumn" msprop:Generator_ColumnPropNameInRow="AOI_In" msprop:Generator_ColumnVarNameInTable="columnAOI_In" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="AOI_In_Ko_EE" msprop:Generator_UserColumnName="AOI_In_Ko_EE" msprop:Generator_ColumnPropNameInTable="AOI_In_Ko_EEColumn" msprop:Generator_ColumnPropNameInRow="AOI_In_Ko_EE" msprop:Generator_ColumnVarNameInTable="columnAOI_In_Ko_EE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HE_V1" msprop:Generator_UserColumnName="HE_V1" msprop:Generator_ColumnPropNameInTable="HE_V1Column" msprop:Generator_ColumnPropNameInRow="HE_V1" msprop:Generator_ColumnVarNameInTable="columnHE_V1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="HE_Bemerkung" msprop:Generator_UserColumnName="HE_Bemerkung" msprop:Generator_ColumnPropNameInTable="HE_BemerkungColumn" msprop:Generator_ColumnPropNameInRow="HE_Bemerkung" msprop:Generator_ColumnVarNameInTable="columnHE_Bemerkung" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bem_Alle" msprop:Generator_UserColumnName="Bem_Alle" msprop:Generator_ColumnPropNameInTable="Bem_AlleColumn" msprop:Generator_ColumnPropNameInRow="Bem_Alle" msprop:Generator_ColumnVarNameInTable="columnBem_Alle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Info_zu_Index" msprop:Generator_UserColumnName="Info_zu_Index" msprop:Generator_ColumnPropNameInTable="Info_zu_IndexColumn" msprop:Generator_ColumnPropNameInRow="Info_zu_Index" msprop:Generator_ColumnVarNameInTable="columnInfo_zu_Index" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cluster" msprop:Generator_UserColumnName="Cluster" msprop:Generator_ColumnPropNameInTable="ClusterColumn" msprop:Generator_ColumnPropNameInRow="Cluster" msprop:Generator_ColumnVarNameInTable="columnCluster" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SonderNozzle" msprop:Generator_UserColumnName="SonderNozzle" msprop:Generator_ColumnPropNameInTable="SonderNozzleColumn" msprop:Generator_ColumnPropNameInRow="SonderNozzle" msprop:Generator_ColumnVarNameInTable="columnSonderNozzle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MU-Höhe_x0020_oben_x0020_VG1" msprop:Generator_UserColumnName="MU-Höhe oben VG1" msprop:Generator_ColumnPropNameInTable="_MU_Höhe_oben_VG1Column" msprop:Generator_ColumnPropNameInRow="_MU_Höhe_oben_VG1" msprop:Generator_ColumnVarNameInTable="_columnMU_Höhe_oben_VG1" type="xs:boolean" />
+              <xs:element name="MU-Höhe_x0020_unten_x0020_VG1" msprop:Generator_UserColumnName="MU-Höhe unten VG1" msprop:Generator_ColumnPropNameInTable="_MU_Höhe_unten_VG1Column" msprop:Generator_ColumnPropNameInRow="_MU_Höhe_unten_VG1" msprop:Generator_ColumnVarNameInTable="_columnMU_Höhe_unten_VG1" type="xs:boolean" />
+              <xs:element name="Mu-Breite_x0020_VG1" msprop:Generator_UserColumnName="Mu-Breite VG1" msprop:Generator_ColumnPropNameInTable="_Mu_Breite_VG1Column" msprop:Generator_ColumnPropNameInRow="_Mu_Breite_VG1" msprop:Generator_ColumnVarNameInTable="_columnMu_Breite_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MU-Höhe_x0020_oben_x0020_VG2" msprop:Generator_UserColumnName="MU-Höhe oben VG2" msprop:Generator_ColumnPropNameInTable="_MU_Höhe_oben_VG2Column" msprop:Generator_ColumnPropNameInRow="_MU_Höhe_oben_VG2" msprop:Generator_ColumnVarNameInTable="_columnMU_Höhe_oben_VG2" type="xs:boolean" />
+              <xs:element name="MU-Höhe_x0020_unten_x0020_VG2" msprop:Generator_UserColumnName="MU-Höhe unten VG2" msprop:Generator_ColumnPropNameInTable="_MU_Höhe_unten_VG2Column" msprop:Generator_ColumnPropNameInRow="_MU_Höhe_unten_VG2" msprop:Generator_ColumnVarNameInTable="_columnMU_Höhe_unten_VG2" type="xs:boolean" />
+              <xs:element name="Mu-Breite_x0020_VG2" msprop:Generator_UserColumnName="Mu-Breite VG2" msprop:Generator_ColumnPropNameInTable="_Mu_Breite_VG2Column" msprop:Generator_ColumnPropNameInRow="_Mu_Breite_VG2" msprop:Generator_ColumnVarNameInTable="_columnMu_Breite_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="THR" msprop:Generator_UserColumnName="THR" msprop:Generator_ColumnPropNameInTable="THRColumn" msprop:Generator_ColumnPropNameInRow="THR" msprop:Generator_ColumnVarNameInTable="columnTHR" type="xs:boolean" />
+              <xs:element name="N2_Löten" msprop:Generator_UserColumnName="N2_Löten" msprop:Generator_ColumnPropNameInTable="N2_LötenColumn" msprop:Generator_ColumnPropNameInRow="N2_Löten" msprop:Generator_ColumnVarNameInTable="columnN2_Löten" type="xs:boolean" />
+              <xs:element name="N2_Verfärbung" msprop:Generator_UserColumnName="N2_Verfärbung" msprop:Generator_ColumnPropNameInTable="N2_VerfärbungColumn" msprop:Generator_ColumnPropNameInRow="N2_Verfärbung" msprop:Generator_ColumnVarNameInTable="columnN2_Verfärbung" type="xs:boolean" />
+              <xs:element name="SPI" msprop:Generator_UserColumnName="SPI" msprop:Generator_ColumnPropNameInTable="SPIColumn" msprop:Generator_ColumnPropNameInRow="SPI" msprop:Generator_ColumnVarNameInTable="columnSPI" type="xs:boolean" />
+              <xs:element name="Klebepunkte" msprop:Generator_UserColumnName="Klebepunkte" msprop:Generator_ColumnPropNameInTable="KlebepunkteColumn" msprop:Generator_ColumnPropNameInRow="Klebepunkte" msprop:Generator_ColumnVarNameInTable="columnKlebepunkte" type="xs:boolean" />
+              <xs:element name="Inlinie_AOI" msprop:Generator_UserColumnName="Inlinie_AOI" msprop:Generator_ColumnPropNameInTable="Inlinie_AOIColumn" msprop:Generator_ColumnPropNameInRow="Inlinie_AOI" msprop:Generator_ColumnVarNameInTable="columnInlinie_AOI" type="xs:boolean" />
+              <xs:element name="DMC" msprop:Generator_UserColumnName="DMC" msprop:Generator_ColumnPropNameInTable="DMCColumn" msprop:Generator_ColumnPropNameInRow="DMC" msprop:Generator_ColumnVarNameInTable="columnDMC" type="xs:boolean" />
+              <xs:element name="L_Tray" msprop:Generator_UserColumnName="L_Tray" msprop:Generator_ColumnPropNameInTable="L_TrayColumn" msprop:Generator_ColumnPropNameInRow="L_Tray" msprop:Generator_ColumnVarNameInTable="columnL_Tray" type="xs:boolean" />
+              <xs:element name="_x00B5_PBoards" msprop:Generator_UserColumnName="µPBoards" msprop:Generator_ColumnPropNameInTable="µPBoardsColumn" msprop:Generator_ColumnPropNameInRow="µPBoards" msprop:Generator_ColumnVarNameInTable="columnµPBoards" type="xs:boolean" />
+              <xs:element name="L5_Fix" msprop:Generator_UserColumnName="L5_Fix" msprop:Generator_ColumnPropNameInTable="L5_FixColumn" msprop:Generator_ColumnPropNameInRow="L5_Fix" msprop:Generator_ColumnVarNameInTable="columnL5_Fix" type="xs:boolean" />
+              <xs:element name="mBom" msprop:Generator_UserColumnName="mBom" msprop:Generator_ColumnPropNameInTable="mBomColumn" msprop:Generator_ColumnPropNameInRow="mBom" msprop:Generator_ColumnVarNameInTable="columnmBom" type="xs:boolean" />
+              <xs:element name="ATB" msprop:Generator_UserColumnName="ATB" msprop:Generator_ColumnPropNameInTable="ATBColumn" msprop:Generator_ColumnPropNameInRow="ATB" msprop:Generator_ColumnVarNameInTable="columnATB" type="xs:boolean" />
+              <xs:element name="TZ_VG1" msprop:Generator_UserColumnName="TZ_VG1" msprop:Generator_ColumnPropNameInTable="TZ_VG1Column" msprop:Generator_ColumnPropNameInRow="TZ_VG1" msprop:Generator_ColumnVarNameInTable="columnTZ_VG1" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TZ_VG2" msprop:Generator_UserColumnName="TZ_VG2" msprop:Generator_ColumnPropNameInTable="TZ_VG2Column" msprop:Generator_ColumnPropNameInRow="TZ_VG2" msprop:Generator_ColumnVarNameInTable="columnTZ_VG2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TZ_VG1_100" msprop:Generator_UserColumnName="TZ_VG1_100" msprop:Generator_ColumnPropNameInTable="TZ_VG1_100Column" msprop:Generator_ColumnPropNameInRow="TZ_VG1_100" msprop:Generator_ColumnVarNameInTable="columnTZ_VG1_100" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TZ_VG2_100" msprop:Generator_UserColumnName="TZ_VG2_100" msprop:Generator_ColumnPropNameInTable="TZ_VG2_100Column" msprop:Generator_ColumnPropNameInRow="TZ_VG2_100" msprop:Generator_ColumnVarNameInTable="columnTZ_VG2_100" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SchablDicke_VG1" msprop:Generator_UserColumnName="SchablDicke_VG1" msprop:Generator_ColumnPropNameInTable="SchablDicke_VG1Column" msprop:Generator_ColumnPropNameInRow="SchablDicke_VG1" msprop:Generator_ColumnVarNameInTable="columnSchablDicke_VG1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SchablDicke_VG2" msprop:Generator_UserColumnName="SchablDicke_VG2" msprop:Generator_ColumnPropNameInTable="SchablDicke_VG2Column" msprop:Generator_ColumnPropNameInRow="SchablDicke_VG2" msprop:Generator_ColumnVarNameInTable="columnSchablDicke_VG2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bauteil_Hoehe_Oben" msprop:Generator_UserColumnName="Bauteil_Hoehe_Oben" msprop:Generator_ColumnPropNameInTable="Bauteil_Hoehe_ObenColumn" msprop:Generator_ColumnPropNameInRow="Bauteil_Hoehe_Oben" msprop:Generator_ColumnVarNameInTable="columnBauteil_Hoehe_Oben" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bauteil_Hoehe_Unten" msprop:Generator_UserColumnName="Bauteil_Hoehe_Unten" msprop:Generator_ColumnPropNameInTable="Bauteil_Hoehe_UntenColumn" msprop:Generator_ColumnPropNameInRow="Bauteil_Hoehe_Unten" msprop:Generator_ColumnVarNameInTable="columnBauteil_Hoehe_Unten" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LP_Dicke" msprop:Generator_UserColumnName="LP_Dicke" msprop:Generator_ColumnPropNameInTable="LP_DickeColumn" msprop:Generator_ColumnPropNameInRow="LP_Dicke" msprop:Generator_ColumnVarNameInTable="columnLP_Dicke" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
